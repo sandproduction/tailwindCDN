@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Password Generator</title>
+</head>
+<body class="flex flex-col justify-center items-center gap-8">
+    <div class="drop-shadow-lg w-full border-b-2">
+        <h1 class="text-center font-semibold text-4xl py-6 font-mono w-full">Password Generator</h1>
+    </div>
+    <section class="bg-cyan-700 text-white font-mono text-xl w-1/2 p-6 text-center flex flex-col gap-2 rounded-[20px] items-center">
+        <h2 class="pb-2 text-2xl w-full">Check Password</h2>
+        <p for="password" class="font-bold bg-black rounded-full text-lg w-auto px-4">Password Kuat/Lemah</p>
+        <input type="text" id="password" class="rounded-[20px] text-black px-3 py-1 text-center w-full">
+
+        <button type="submit" value="Check" class="bg-green-600 py-2 mt-3 w-full rounded-[20px] hover:bg-green-500 active:bg-blue-700">Check</button>
+    </section>
+</body>
+</html>
