@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>//di tailwind tidak semua ukuran ada contoh m-1 s/d m-12 ada ukurannya,contoh m-13 tidak ada ukurannya jadi harus buat sendiri
+        tailwind.config={
+            theme:{
+                extend:{
+                    spacing:{
+                        13: '3.25rem'
+                    }
+                }
+            }
+        }
+    </script>
     <title>Document</title>
+    <style type="text/tailwindcss">
+        /* *{
+            border: 1px solid red
+        } */
+    </style>
 </head>
 <body>
-    <section class="m-5 p-6 bg-amber-950">
-        <h1 class="text-white font-bold text-4xl pb-3">Ini CDN</h1>
-        <button class="bg-green-700 text-white p-3">Submit</button>
+    <h1 class="bg-teal-400 p-3 font-bold text-center text-2xl">Lagi Belajar Bro Tailwind CSS</h1>
+
+    <section class="m-5 p-6 bg-amber-500 mb-10">
+        <h1 class="font-bold text-4xl pb-3">Spacing</h1>
+        <div class="m-13">Margin</div>
+        <div class="p-8">Padding</div>
+    </section>
+
+    <section class="m-5 p-6 bg-amber-500 mb-10">
+        <h1 class="font-bold text-4xl pb-3">Sizing</h1>
+        <div class="w-32 h-32">Kotak Sigma</div>
+    </section>
+
+    <section class="m-auto p-6 bg-amber-500 max-w-4xl">
+        <h1 class="font-bold text-4xl pb-3">Typography</h1>
+        <div class="mb-96 font-serif">
+            <p class="mb-3 text-xl font-semibold">By sandika 2024</p>
+            <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas obcaecati delectus voluptates veniam commodi error, veritatis ipsum fugiat omnis praesentium laboriosam laudantium, a aliquam ipsa quisquam sed dolore quasi.</p>
+            <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas obcaecati delectus voluptates veniam commodi error, veritatis ipsum fugiat omnis praesentium laboriosam laudantium, a aliquam ipsa quisquam sed dolore quasi.</p>
+            <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas obcaecati delectus voluptates veniam commodi error, veritatis ipsum fugiat omnis praesentium laboriosam laudantium, a aliquam ipsa quisquam sed dolore quasi.</p>
+        </div>
     </section>
 </body>
 </html>
